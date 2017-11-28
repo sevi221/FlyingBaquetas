@@ -1,4 +1,22 @@
 body {
   font-family: 'Press Start 2P', cursive;
-  
+  background-color:#4A708B ;
+  color: #ffff;
+}
+
+h1 {
+
+}
+
+canvas {
+  border: 1px solid red;
+}
+
+.rightColumn {
+  float: right;
+  padding: 40px;
+}
+
+.copy {
+  text-align: center;
 }
