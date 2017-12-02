@@ -1,9 +1,9 @@
-
-function MaxMil (canvas, sprite) {
+function Drummer (canvas, sprite) {
   this.canvas = canvas;
   this.ctx = this.canvas.getContext('2d');
 
-  this.x = 0;
+// Lo sitúo en el centro
+  this.x = width/2;
   this.y = 0;
   this.scale = 0.15;
   this.speed = 10;
@@ -11,13 +11,19 @@ function MaxMil (canvas, sprite) {
   this.sprite = new Image();
   this.sprite.src = //sprite;
 
-}
+};
 
-Maxmil.prototype.isReady = function() {
+Drummer.prototype.isReady = function () {
   return this.sprite.isReady;
+};
+
+Drummer.prototype.move = function () {
+
 }
 
+Drummer.prototype.shoot = function () {
+
+}
 // crear random para moverse de izquerda a derecha y vuelta.
-// Y random de disparar
+// Random de disparar
 // Ir disparando cada vez más rápido
-//

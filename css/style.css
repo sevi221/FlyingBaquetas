@@ -4,12 +4,48 @@ body {
   color: #ffff;
 }
 
-h1 {
+.pre-title {
+  text-align: center;
+}
 
+h2 {
+  color: green;
+}
+
+.parpadeo {
+
+animation-name: parpadeo;
+ animation-duration: 1s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+
+ -webkit-animation-name:parpadeo;
+ -webkit-animation-duration: 1s;
+ -webkit-animation-timing-function: linear;
+ -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {
+ 0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
 }
 
 canvas {
   border: 5px solid red;
+  padding: 5px;
 }
 
 .rightColumn {
